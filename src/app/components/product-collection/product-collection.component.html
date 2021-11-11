@@ -1,0 +1,12 @@
+<div>
+<div
+  class="product-item"
+  *ngFor="let product of products"
+>
+  <p>{{product.name}}</p><span> by {{product.retailPrice}}</span>
+  <button
+    (click)="remove.emit(product.id)"
+    data-test="remove-button"
+  >Remove from Collection</button>
+</div>
+</div>
