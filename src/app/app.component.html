@@ -13,8 +13,6 @@
   <h2>Product</h2>
   <app-product-list class="product-list" [products]="products" (add)="onAdd($event)"></app-product-list>
 
-  <h2>My Collection</h2>
-
-    <app-product-collection class="product-collection" [products]="products" (remove)="onRemove($event)"></app-product-collection>
-
+  <h2>My Basket</h2>
+  <app-shopping-basket></app-shopping-basket>
 </div>
